@@ -1,0 +1,60 @@
+{
+  "name": "statpanel",
+  "version": "0.1.0",
+  "description": "The module to operate cluster servers",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "directories": {
+    "dist": "./dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/lib/cjs/clusterapi.js",
+  "module": "./dist/lib/esm/clusterapi.js",
+  "exports": {
+    ".": {
+      "require": "./dist/lib/cjs/clusterapi.js",
+      "import": "./dist/lib/esm/clusterapi.js"
+    },
+    "./webserver": {
+      "require": "./dist/lib/cjs/webserver.js",
+      "import": "./dist/lib/esm/webserver.js"
+    },
+    "./statpanel": {
+      "require": "./dist/lib/cjs/statpanel.js",
+      "import": "./dist/lib/esm/statpanel.js"
+    }
+  },
+  "scripts": {
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "build": "node ./esbuild.js",
+    "postbuild": "tsc --allowJs --declaration --emitDeclarationOnly --outDir ./dist/lib/types",
+    "start": "node ./index.js",
+    "doc": "typedoc --entryPointStrategy expand ./src --out ./docs --disableSources"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.5.5",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "prettier": "^3.3.3",
+    "typedoc": "^0.26.7",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  }
+}

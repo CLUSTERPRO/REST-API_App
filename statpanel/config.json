@@ -1,0 +1,17 @@
+{
+  "listen": {
+    "host": "localhost",
+    "port": 3000,
+    "ssl": true,
+    "ssl_cert_file": "./server.crt",
+    "ssl_key_file": "./server.key"
+  },
+  "servers": [
+    {
+      "clpserver": "https://yourserver:29009",
+      "user": "user id",
+      "passwd": "password"
+    }
+  ],
+  "skipCertificateCheck": false
+}

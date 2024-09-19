@@ -4,3 +4,6 @@ This page introduces applications that use the EXPRESSCLUSTER and CLUSTERPRO RES
 
 For more information about each application, please see the README.md in the respective directory.
 
+## Applications
+
+- [statpanel](statpanel/)
