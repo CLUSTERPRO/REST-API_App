@@ -1,0 +1,147 @@
+<svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 128 128"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <!-- power -->
+        <symbol
+            id="power"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 1.5;
+            ">
+            <g transform="matrix(1.05045,0,0,1.05045,-8.73368,-14.5627)">
+                <path
+                    d="M44.646,33.193C29.427,41.979 20.052,58.218 20.052,75.792C20.052,102.94 42.093,124.981 69.241,124.981C96.389,124.981 118.43,102.94 118.43,75.792C118.43,58.218 109.055,41.979 93.835,33.193C109.055,41.979 118.43,58.218 118.43,75.792C118.43,102.94 96.389,124.981 69.241,124.981C42.093,124.981 20.052,102.94 20.052,75.792C20.052,58.218 29.427,41.979 44.646,33.193Z"
+                    style="stroke-width: 15.23px" />
+            </g>
+            <g transform="matrix(1,0,0,0.906573,-1.4959,0.793625)">
+                <path d="M65.496,11.564L65.496,64" style="stroke-width: 16.76px" />
+            </g>
+        </symbol>
+
+        <!-- reboot -->
+        <symbol
+            id="reboot"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 1.5;
+            ">
+            <g transform="matrix(1.05045,0,0,1.05045,-8.73368,-14.5627)">
+                <path
+                    d="M26.642,100.386C35.429,115.605 51.667,124.981 69.241,124.981C96.389,124.981 118.43,102.94 118.43,75.792C118.43,48.643 96.389,26.603 69.241,26.603C51.667,26.603 35.429,35.978 26.642,51.197C35.429,35.978 51.667,26.603 69.241,26.603C96.389,26.603 118.43,48.643 118.43,75.792C118.43,102.94 96.389,124.981 69.241,124.981C51.667,124.981 35.429,115.605 26.642,100.386Z"
+                    style="stroke-width: 15.23px" />
+            </g>
+            <g transform="matrix(1,0,0,0.70259,-51.2149,2.20115)">
+                <path d="M65.496,11.564L65.496,64" style="stroke-width: 18.51px" />
+            </g>
+            <g transform="matrix(6.12323e-17,1,-0.70259,4.30212e-17,59.2468,-18.329)">
+                <path d="M65.496,11.564L65.496,64" style="stroke-width: 18.51px" />
+            </g>
+        </symbol>
+
+        <!-- suspend -->
+        <symbol
+            id="suspend"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+            ">
+            <g transform="matrix(1,0,0,1,19.1001,0)">
+                <g transform="matrix(1.51723,0,0,0.99502,4.29836,0.572906)">
+                    <rect x="6.347" y="12.459" width="16.808" height="102.571" />
+                </g>
+                <g transform="matrix(1.51723,0,0,0.99502,40.7397,0.572906)">
+                    <rect x="6.347" y="12.459" width="16.808" height="102.571" />
+                </g>
+            </g>
+        </symbol>
+
+        <!-- resume -->
+        <symbol
+            id="resume"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+            ">
+            <g transform="matrix(1,0,0,1,-1.70431,0.510853)">
+                <g transform="matrix(6.12323e-17,1,-0.845407,5.17663e-17,134.258,-29.9442)">
+                    <path d="M93.433,21.862L144.463,110.248L42.403,110.248L93.433,21.862Z" />
+                </g>
+                <g transform="matrix(1,0,0,0.99502,9.28558,0.0620526)">
+                    <rect x="6.347" y="12.459" width="16.808" height="102.571" />
+                </g>
+            </g>
+        </symbol>
+
+        <!-- start -->
+        <symbol
+            id="start"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+            ">
+            <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,130.055,-29.4333)">
+                <path d="M93.433,21.862L144.463,110.248L42.403,110.248L93.433,21.862Z" />
+            </g>
+        </symbol>
+
+        <!-- stop -->
+        <symbol
+            id="stop"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+            ">
+            <g transform="matrix(0.866138,0,0,0.866138,9.10874,8.5672)">
+                <rect x="12.345" y="12.97" width="102.06" height="102.06"/>
+            </g>
+        </symbol>
+
+        <!-- failover -->
+        <symbol
+            id="failover"
+            viewBox="0 0 128 128"
+            style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-miterlimit: 1.5;
+            ">
+            <g transform="matrix(1.45139,0,0,1.45139,-57.0372,-76.4166)">
+                <g transform="matrix(1,0,0,1,0.176313,-1.11565)">
+                    <path d="M53.48,97.675L112.955,97.675" style="stroke-width:9.65px;"/>
+                </g>
+                <g transform="matrix(0.663349,-0.663349,0.663349,0.663349,38.5925,166.17)">
+                    <path d="M78.281,3.996L108.371,3.996" style="stroke-width:10.28px;"/>
+                </g>
+                <g transform="matrix(0.663349,0.663349,-0.663349,0.663349,43.8945,22.0205)">
+                    <path d="M78.281,3.996L108.371,3.996" style="stroke-width:10.28px;"/>
+                </g>
+            </g>
+        </symbol>
+    </defs>
+</svg>

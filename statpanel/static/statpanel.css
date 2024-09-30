@@ -1,0 +1,122 @@
+.gui-card {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 8px;
+    border: 5px ridge #888;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom right, #444, #666, #111, #222, #333, #222);
+    font-size: 9pt;
+    color: #ddd;
+}
+
+.gui-cluster {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #eee;
+    background: linear-gradient(to bottom right, #111, #222, #333, #222);
+    border-radius: 6px;
+    border: 1px inset #aaa;
+    margin: 0px 0px 8px 0px;
+    padding: 8px 8px;
+}
+
+.gui-header {
+    font-weight: bold;
+    color: #eee;
+    border-bottom: 1px inset #888;
+    margin: 4px 0px 0px 0px;
+    padding: 4px 8px;
+}
+
+.gui-body {
+    margin-left: 2em;
+}
+
+.gui-sv-item {
+    display: inline-block;
+    width: 100px;
+}
+
+.gui-sub-body {
+    margin-left: 1em;
+}
+
+.gui-grp-item {
+    display: inline-block;
+    width: 100px;
+}
+
+.gui-grp-sub-item {
+    display: inline-block;
+    width: 150px;
+}
+
+.gui-mon-item {
+    display: inline-block;
+    width: 150px;
+}
+
+.gui-btn {
+    margin: 0px 1px;
+    padding: 1px 2px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.gui-btn:active {
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(1px);
+}
+
+.gui-btn-icon {
+    fill: #111;
+    stroke: #111;
+    cursor: pointer;
+    width: 14px;
+}
+
+.gui-normal,
+.gui-online {
+    color: rgba(0, 255, 0, 1);
+}
+
+.gui-online-pending,
+.gui-offline-pending {
+    color: rgba(0, 128, 0, 0.3);
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0% {
+        color: rgba(0, 255, 0, 0.3);
+    }
+    100% {
+        color: rgba(0, 255, 0, 1);
+    }
+}
+
+.gui-error,
+.gui-online-failure,
+.gui-offline-failure {
+    color: rgba(255, 0, 0, 1);
+}
+
+.gui-warning {
+    color: rgba(255, 197, 0, 1);
+}
+
+.gui-offline {
+    color: rgba(0, 255, 0, 0.4);
+}
+
+.gui-unknown {
+    color: rgba(255, 255, 255, 0.4);
+}

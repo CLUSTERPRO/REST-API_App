@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-ja",
+    "esbenp.prettier-vscode",
+    "oderwat.indent-rainbow",
+    "shardulm94.trailing-spaces"
+  ]
+}

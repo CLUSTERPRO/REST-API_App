@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Cluster Status Sample Page</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./lib/statpanel.css" media="all" />
+        <script type="importmap">
+            {
+                "imports": {
+                    "socket.io-client": "https://cdn.socket.io/4.7.5/socket.io.esm.min.js"
+                }
+            }
+        </script>
+        <script type="module">
+            import { StatPanel } from './lib/esm/statpanel.js';
+            const areas = {};
+
+            function onLoad() {
+                const spanel = new StatPanel(
+                    `${window.location.protocol}//${window.location.host}`,
+                );
+                const socket = spanel.getSocket();
+                socket.on('status', (status) => {
+                    if (!(status.id in areas)) {
+                        const area = document.createElement('div');
+                        area.className = 'panel';
+                        viewarea.appendChild(area);
+                        areas[status.id] = area;
+                    }
+                    spanel.showClusterStatus(areas[status.id], status);
+                });
+                socket.on('message', console.log);
+                socket.on('error', console.error);
+            }
+
+            window.addEventListener('load', onLoad);
+        </script>
+        <style>
+            body {
+                width: 100vw;
+                margin: 16px 0px 0px 0px;
+                background: #e8e8e8;
+            }
+
+            h1 {
+                color: #222;
+                font-family:
+                    fantasy,
+                    Copperplate,
+                    Copperplate Gothic Light;
+                font-size: 18pt;
+                text-align: center;
+            }
+
+            div.panel {
+                margin-bottom: 16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Cluster Status</h1>
+        <div id="viewarea"></div>
+    </body>
+</html>
